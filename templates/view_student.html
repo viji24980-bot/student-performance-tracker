@@ -1,0 +1,22 @@
+<form method="POST">
+
+Enter Roll Number:
+<input type="text" name="roll">
+
+<button>Search</button>
+
+</form>
+
+{% if student %}
+
+<h2>Student Details</h2>
+
+Name: {{student[1]}} <br><br>
+
+Math: {{student[2]}} <br>
+
+Science: {{student[3]}} <br>
+
+English: {{student[4]}} <br>
+
+{% endif %}
